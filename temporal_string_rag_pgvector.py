@@ -12,6 +12,10 @@ from sentence_transformers import SentenceTransformer
 import openai
 from collections import defaultdict
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 @dataclass

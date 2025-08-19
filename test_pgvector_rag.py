@@ -6,7 +6,11 @@ Test script for the pgvector-based Temporal String RAG system
 import os
 import sys
 from datetime import datetime
+from dotenv import load_dotenv
 from temporal_string_rag_pgvector import TemporalStringRAG
+
+# Load environment variables from .env file
+load_dotenv()
 
 def test_basic_functionality():
     """Test basic functionality of the pgvector RAG system"""
